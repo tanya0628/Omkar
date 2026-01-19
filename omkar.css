@@ -876,3 +876,164 @@ display: flex;
     grid-template-columns: 1fr;
   }
 }
+ .contact-section {
+      padding: 80px 10%;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .contact-header h1 {
+      font-size: 36px;
+      color: #1aa3ff;
+    }
+
+    .contact-header p {
+      color: #666;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    /* ===== Layout ===== */
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    /* ===== Contact Info ===== */
+    .contact-info h2 {
+      color: #1aa3ff;
+      margin-bottom: 20px;
+    }
+
+    .info-box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .info-box i {
+      font-size: 24px;
+      color: #1aa3ff;
+      margin-right: 15px;
+    }
+
+    .info-box p {
+      color: #555;
+      font-size: 15px;
+    }
+
+    /* ===== Social Icons ===== */
+    .social-links {
+      margin-top: 25px;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: #1aa3ff;
+      color: #fff;
+      border-radius: 50%;
+      margin-right: 10px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      background: #0b84d8;
+      transform: translateY(-3px);
+    }
+
+    /* ===== Contact Form ===== */
+    .contact-form h2 {
+      color: #1aa3ff;
+      margin-bottom: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border: 1px solid #cce6ff;
+      border-radius: 8px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .contact-form textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    .contact-form button {
+      background: #1aa3ff;
+      color: #fff;
+      border: none;
+      padding: 14px 30px;
+      font-size: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #0b84d8;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 900px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-section {
+        padding: 60px 6%;
+      }
+    }
+/* Floating Icons */
+.floating-icons {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+}
+
+.float-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.float-btn.call {
+  background: #1aa3ff; /* Sky Blue */
+}
+
+.float-btn.whatsapp {
+  background: #25d366; /* WhatsApp Green */
+}
+
+.float-btn:hover {
+  transform: scale(1.1);
+}
